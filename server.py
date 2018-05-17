@@ -2,7 +2,7 @@ import socket
 import threading
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.bind(('0.0.0.0', 10000))
+sock.bind(('0.0.0.0', 0))
 sock.listen(1)
 connections = []
 
